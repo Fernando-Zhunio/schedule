@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+    <style>
+      table {
+        table-layout: fixed;
+        width: 100%;
+      }
+    </style>
+    <link rel="stylesheet" href="src/styles/styles-schedules.css">
+  </head>
+  <body>
+    <div style="display: flex;">
+      <div>
+        <label for="start">Minutos</label>
+        <input id="time" type="time" />
+      </div>
+      <div>
+        <label for="start">Dia</label>
+        <input id="date" type="date" />
+      </div>
+      <div>
+        <button id="btn-add">Agregar</button>
+      </div>
+      <div>
+        <button id="btn-next">Next</button>
+      </div>
+      <div>
+        <button id="btn-previous">Previous</button>
+      </div>
+    </div>
+    <div id="app">
+      <div id="schedule"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
